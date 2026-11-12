@@ -1,4 +1,4 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
+﻿import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/repositories/trail_repository.dart';
 import 'trail_event.dart';
 import 'trail_state.dart';

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../logic/bloc/trail_bloc.dart';
 import '../../logic/bloc/trail_event.dart';
@@ -108,7 +108,6 @@ class HomeScreen extends StatelessWidget {
               onRefresh: () async => context.read<TrailBloc>().add(const LoadTrailsEvent()),
               child: Column(
                 children: [
-                  // Блок статистики
                   Container(
                     margin: const EdgeInsets.all(16),
                     padding: const EdgeInsets.all(20),
@@ -136,7 +135,6 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // Фильтры
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: SegmentedButton<String>(
@@ -150,7 +148,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  // Список
                   Expanded(
                     child: ListView.builder(
                       itemCount: state.trails.length,
